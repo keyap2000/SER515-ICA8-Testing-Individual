@@ -12,8 +12,7 @@ public class CountUrinals {
             number = Integer.parseInt(str);
             int count = 0;
 
-            // Number can be valid or invalid
-            // If number is valid, print and display the message and number
+            // Number can be valid or invalid - if valid then return count else catch block will be executed
             for (int j = 0; j < str.length(); j++) {
                     if (str.charAt(j) == '0') {
                         if ((j - 1 >= 0 && str.charAt(j - 1) == '0') && (j + 1 < str.length() && str.charAt(j + 1) == '0')) {
@@ -34,6 +33,7 @@ public class CountUrinals {
 
             // Print the message if exception occurred
             System.out.println("NumberFormatException occurred");
+            System.out.println("Please enter input in correct format i.e. binary format");
         }
         return 0;
     }
