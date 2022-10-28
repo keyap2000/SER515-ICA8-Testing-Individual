@@ -12,6 +12,8 @@ class urinalsTest {
         System.out.println("before calling");
         int actual = cu.countUrinals();
         int expected = 0;
+        System.out.println("actual : " + actual);
+        System.out.println("expected : " + expected);
         Assert.assertEquals(expected, actual);
     }
 }

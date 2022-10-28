@@ -6,7 +6,7 @@ public class ReadInput {
 
     public ReadInput() throws FileNotFoundException {
 
-        File file = new File("InputFile1.dat");
+        File file = new File("InputFile.dat");
         if (file.exists()) {
             Scanner sc = new Scanner(file);
 
