@@ -17,10 +17,14 @@ public class ReadInput {
 
             while (sc.hasNextLine()) {
                 String line = sc.nextLine();
-                CountUrinals cu = new CountUrinals(line);
-                int count = cu.countUrinals();
-                System.out.println("input: " + line + " , count: " + count);
-                output = output + count + "\n";
+                if(line.length()>=1 && line.length()<=20) {
+                    CountUrinals cu = new CountUrinals(line);
+                    int count = cu.countUrinals();
+                    System.out.println("input: " + line + " , count: " + count);
+                    output = output + count + "\n";
+                }else{
+                    System.out.println(line + " has length less than 1 or greater than 20");
+                }
             }
 
         }else{
