@@ -1,6 +1,17 @@
+import java.io.FileNotFoundException;
+
 public class urinals {
 
-    public static void main(String[] args) {
+    urinals(){}
+
+    /**
+     * Title: Counting Urinals
+     * @author Keya Patel
+     */
+
+    public static void main(String[] args) throws FileNotFoundException {
         System.out.println("Author - Keya Patel");
+        urinals u = new urinals();
+        ReadInput r = new ReadInput();
     }
 }
