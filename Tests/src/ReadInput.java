@@ -11,6 +11,7 @@ public class ReadInput {
 
         if (file.length() == 0) {
             System.out.println("empty file");
+            output = "empty file";
         }
 
         while (sc.hasNextLine()) {
