@@ -36,8 +36,7 @@ public class WriteOutputToFile {
                 System.out.println("Successfully wrote to the file.");
             }
         } catch(IOException e){
-                System.out.println("An error occurred.");
-                e.printStackTrace();
+                System.out.println("IOException occurred.");
         }
     }
     
